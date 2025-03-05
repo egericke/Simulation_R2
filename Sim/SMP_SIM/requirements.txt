@@ -1,0 +1,12 @@
+# Core simulation packages
+salabim>=23.0.0
+
+# GUI packages
+PyQt5>=5.15.0
+
+# CAD integration
+ezdxf>=0.17.0
+
+# Optional visualization enhancements
+matplotlib>=3.5.0
+numpy>=1.22.0

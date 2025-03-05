@@ -1,0 +1,519 @@
+2025-03-04 16:35:41,574 - simulation.config - INFO - Configuration loaded from config.json
+2025-03-04 16:35:41,592 - simulation.config - INFO - Configuration saved to last_config.json
+2025-03-04 16:35:41,593 - __main__ - INFO - Loaded configuration with keys: ['simulation_time', 'heat_generation_interval', 'max_heats', 'n_bays', 'n_eaf_per_bay', 'n_lmf_per_bay', 'n_degassers_per_bay', 'n_casters_per_bay', 'n_ladles', 'n_ladle_cars', 'bays', 'units', 'grade_distribution', 'grade_properties', 'grade_routes', 'ladle_warming_time', 'ladle_max_heats', 'ladle_car_speed', 'crane_speed', 'loading_time', 'unloading_time', 'bay_connections', 'metrics_reporting_interval', 'visualization', 'background_type', 'background_image', 'cad_file_path', 'sim_speed', 'takt_time', 'lean_metrics', 'scenarios', 'logging', 'dashboard', 'analytics', 'heat_interval', 'production_manager_interval', 'grid_size', 'grid_width', 'grid_height', 'cad_scale', 'cad_x_offset', 'cad_y_offset', 'auto_scale_cad', 'pdf_real_width', 'pdf_real_height', 'production_hours_per_year', 'equipment_positions', 'n_cranes_per_bay', '_animation_settings', 'show_grid_overlay']
+2025-03-04 16:35:41,593 - __main__ - INFO - Bays in config: True
+2025-03-04 16:35:41,630 - __main__ - INFO - SimulationApp initialized with config keys: ['simulation_time', 'heat_generation_interval', 'max_heats', 'n_bays', 'n_eaf_per_bay', 'n_lmf_per_bay', 'n_degassers_per_bay', 'n_casters_per_bay', 'n_ladles', 'n_ladle_cars', 'bays', 'units', 'grade_distribution', 'grade_properties', 'grade_routes', 'ladle_warming_time', 'ladle_max_heats', 'ladle_car_speed', 'crane_speed', 'loading_time', 'unloading_time', 'bay_connections', 'metrics_reporting_interval', 'visualization', 'background_type', 'background_image', 'cad_file_path', 'sim_speed', 'takt_time', 'lean_metrics', 'scenarios', 'logging', 'dashboard', 'analytics', 'heat_interval', 'production_manager_interval', 'grid_size', 'grid_width', 'grid_height', 'cad_scale', 'cad_x_offset', 'cad_y_offset', 'auto_scale_cad', 'pdf_real_width', 'pdf_real_height', 'production_hours_per_year', 'equipment_positions', 'n_cranes_per_bay', '_animation_settings', 'show_grid_overlay']
+2025-03-04 16:35:41,630 - __main__ - INFO - Bays in config: True
+2025-03-04 16:35:42,487 - __main__ - INFO - LoadingThread initialized with config keys: ['simulation_time', 'heat_generation_interval', 'max_heats', 'n_bays', 'n_eaf_per_bay', 'n_lmf_per_bay', 'n_degassers_per_bay', 'n_casters_per_bay', 'n_ladles', 'n_ladle_cars', 'bays', 'units', 'grade_distribution', 'grade_properties', 'grade_routes', 'ladle_warming_time', 'ladle_max_heats', 'ladle_car_speed', 'crane_speed', 'loading_time', 'unloading_time', 'bay_connections', 'metrics_reporting_interval', 'visualization', 'background_type', 'background_image', 'cad_file_path', 'sim_speed', 'takt_time', 'lean_metrics', 'scenarios', 'logging', 'dashboard', 'analytics', 'heat_interval', 'production_manager_interval', 'grid_size', 'grid_width', 'grid_height', 'cad_scale', 'cad_x_offset', 'cad_y_offset', 'auto_scale_cad', 'pdf_real_width', 'pdf_real_height', 'production_hours_per_year', 'equipment_positions', 'n_cranes_per_bay', '_animation_settings', 'show_grid_overlay']
+2025-03-04 16:35:42,717 - __main__ - INFO - Continuing with simulation setup without initial animation step
+2025-03-04 16:35:42,721 - layer_manager - INFO - Layer created: Background (CAD layer: False)
+2025-03-04 16:35:42,729 - layer_manager - INFO - Layer created: Units (CAD layer: False)
+2025-03-04 16:35:42,730 - layer_manager - INFO - Layer created: LadleCars (CAD layer: False)
+2025-03-04 16:35:42,733 - layer_manager - INFO - Layer created: Routes (CAD layer: False)
+2025-03-04 16:35:42,735 - layer_manager - INFO - Layer created: HUD (CAD layer: False)
+2025-03-04 16:35:42,750 - cad_integration - INFO - Using image background from C:/Users/geev01/Desktop/30071551_14-02-2025.BMP
+2025-03-04 16:35:42,787 - cad_integration - INFO - Loaded image with dimensions 1318x1216
+2025-03-04 16:35:42,787 - cad_integration - ERROR - Error loading background image: Animate.__init__() got an unexpected keyword argument 'width'
+2025-03-04 16:35:42,787 - __main__ - INFO - Loaded image background from C:/Users/geev01/Desktop/30071551_14-02-2025.BMP
+2025-03-04 16:35:42,795 - process_control.scenario_manager - INFO - ScenarioManager initialized with scenario: standard
+2025-03-04 16:35:42,796 - spatial.bay - INFO - Bay bay3 created with dimensions: 55.0x157.0
+2025-03-04 16:35:42,796 - spatial.bay - INFO - Bay bay4 created with dimensions: 60.0x289.0
+2025-03-04 16:35:42,796 - spatial.bay - INFO - Bay bay1 created with dimensions: 41.0x166.0
+2025-03-04 16:35:42,800 - spatial.bay - INFO - Bay bay2 created with dimensions: 44.0x209.0
+2025-03-04 16:35:42,800 - spatial.spatial_manager - INFO - Precomputed 48 common paths between bays
+2025-03-04 16:35:42,800 - spatial.spatial_manager - INFO - SpatialManager initialized with 4 bays
+2025-03-04 16:35:42,800 - process_control.scenario_manager - INFO - ScenarioManager initialized with scenario: standard
+2025-03-04 16:35:42,800 - simulation_service - INFO - SimulationService initialized successfully.
+2025-03-04 16:35:42,800 - spatial.bay - INFO - Bay bay3 created with dimensions: 55.0x157.0
+2025-03-04 16:35:42,800 - spatial.bay - INFO - Bay bay4 created with dimensions: 60.0x289.0
+2025-03-04 16:35:42,800 - spatial.bay - INFO - Bay bay1 created with dimensions: 41.0x166.0
+2025-03-04 16:35:42,811 - spatial.bay - INFO - Bay bay2 created with dimensions: 44.0x209.0
+2025-03-04 16:35:42,811 - spatial.spatial_manager - INFO - Precomputed 48 common paths between bays
+2025-03-04 16:35:42,811 - spatial.spatial_manager - INFO - SpatialManager initialized with 4 bays
+2025-03-04 16:35:42,811 - route_manager_adapter - INFO - ProcessRouteManager initialized
+2025-03-04 16:35:42,811 - equipment.ladle_car - INFO - TappingCar_1 initialized at bay1
+2025-03-04 16:35:42,811 - equipment.ladle_car - INFO - TreatmentCar_2 initialized at bay2
+2025-03-04 16:35:42,811 - equipment.ladle_car - INFO - RhCar_3 initialized at bay1
+2025-03-04 16:35:42,811 - spatial.spatial_manager - INFO - Using bay center as crane home position for bay bay1: {'x': 207.5, 'y': 160.0}
+2025-03-04 16:35:42,811 - equipment.crane - INFO - Crane Crane_bay1_1 initialized in bay bay1
+2025-03-04 16:35:42,811 - spatial.spatial_manager - INFO - Using bay center as crane home position for bay bay1: {'x': 207.5, 'y': 160.0}
+2025-03-04 16:35:42,811 - equipment.crane - INFO - Crane Crane_bay1_2 initialized in bay bay1
+2025-03-04 16:35:42,827 - spatial.spatial_manager - INFO - Using bay center as crane home position for bay bay2: {'x': 254.0, 'y': 170.5}
+2025-03-04 16:35:42,828 - equipment.crane - INFO - Crane Crane_bay2_1 initialized in bay bay2
+2025-03-04 16:35:42,832 - spatial.spatial_manager - INFO - Using bay center as crane home position for bay bay2: {'x': 254.0, 'y': 170.5}
+2025-03-04 16:35:42,832 - equipment.crane - INFO - Crane Crane_bay2_2 initialized in bay bay2
+2025-03-04 16:35:42,832 - equipment.transport_manager - INFO - TransportManager initialized with 3 ladle cars and 2 bays
+2025-03-04 16:35:42,832 - equipment.ladle - INFO - Ladle 0 initialized at bay1
+2025-03-04 16:35:42,832 - equipment.ladle - INFO - Ladle 1 initialized at bay2
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 2 initialized at bay1
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 3 initialized at bay2
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 4 initialized at bay1
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 5 initialized at bay2
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 6 initialized at bay1
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 7 initialized at bay2
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 8 initialized at bay1
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 9 initialized at bay2
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 10 initialized at bay1
+2025-03-04 16:35:42,838 - equipment.ladle - INFO - Ladle 11 initialized at bay2
+2025-03-04 16:35:42,838 - equipment.ladle_manager - INFO - LadleManager initialized with 12 ladles
+2025-03-04 16:35:42,838 - production_units.eaf - INFO - EnhancedEAFUnit 1 initialized in bay bay1
+2025-03-04 16:35:42,838 - route_manager_adapter - INFO - Registered EAF in bay1
+2025-03-04 16:35:42,838 - production_units.lmf - INFO - EnhancedLMFStation 1 initialized in bay bay1
+2025-03-04 16:35:42,838 - route_manager_adapter - INFO - Registered LMF in bay1
+2025-03-04 16:35:42,853 - production_units.lmf - INFO - EnhancedLMFStation 2 initialized in bay bay1
+2025-03-04 16:35:42,854 - route_manager_adapter - INFO - Registered LMF in bay1
+2025-03-04 16:35:42,854 - production_units.degasser - INFO - EnhancedDegasserUnit 1 initialized in bay bay1
+2025-03-04 16:35:42,854 - route_manager_adapter - INFO - Registered Degasser in bay1
+2025-03-04 16:35:42,854 - production_units.caster - INFO - Caster Caster_1 initialized in bay bay1
+2025-03-04 16:35:42,854 - route_manager_adapter - INFO - Registered Caster in bay1
+2025-03-04 16:35:42,854 - production_units.caster - INFO - Caster Caster_2 initialized in bay bay1
+2025-03-04 16:35:42,854 - route_manager_adapter - INFO - Registered Caster in bay1
+2025-03-04 16:35:42,854 - production_units.eaf - INFO - EnhancedEAFUnit 1 initialized in bay bay2
+2025-03-04 16:35:42,854 - route_manager_adapter - INFO - Registered EAF in bay2
+2025-03-04 16:35:42,854 - production_units.lmf - INFO - EnhancedLMFStation 1 initialized in bay bay2
+2025-03-04 16:35:42,854 - route_manager_adapter - INFO - Registered LMF in bay2
+2025-03-04 16:35:42,870 - production_units.lmf - INFO - EnhancedLMFStation 2 initialized in bay bay2
+2025-03-04 16:35:42,871 - route_manager_adapter - INFO - Registered LMF in bay2
+2025-03-04 16:35:42,871 - production_units.degasser - INFO - EnhancedDegasserUnit 1 initialized in bay bay2
+2025-03-04 16:35:42,871 - route_manager_adapter - INFO - Registered Degasser in bay2
+2025-03-04 16:35:42,871 - production_units.caster - INFO - Caster Caster_1 initialized in bay bay2
+2025-03-04 16:35:42,871 - route_manager_adapter - INFO - Registered Caster in bay2
+2025-03-04 16:35:42,878 - production_units.caster - INFO - Caster Caster_2 initialized in bay bay2
+2025-03-04 16:35:42,878 - route_manager_adapter - INFO - Registered Caster in bay2
+2025-03-04 16:35:42,878 - production_manager - INFO - Placing EAF 1 at position {'x': 197.0, 'y': 160.0} in bay bay1
+2025-03-04 16:35:42,878 - spatial.bay - INFO - Added EAF bay1_EAF_1 to bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,882 - spatial.spatial_manager - INFO - Placed equipment bay1_EAF_1 in bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,882 - production_manager - INFO - Placing LMF 1 at position {'x': 197.0, 'y': 160.0} in bay bay1
+2025-03-04 16:35:42,882 - spatial.bay - INFO - Added LMF bay1_LMF_1 to bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,882 - spatial.spatial_manager - INFO - Placed equipment bay1_LMF_1 in bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,882 - production_manager - INFO - Placing LMF 2 at position {'x': 204.0, 'y': 160.0} in bay bay1
+2025-03-04 16:35:42,886 - spatial.bay - INFO - Added LMF bay1_LMF_2 to bay bay1 at {'x': 204.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - spatial.spatial_manager - INFO - Placed equipment bay1_LMF_2 in bay bay1 at {'x': 204.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - production_manager - INFO - Placing Degasser 1 at position {'x': 197.0, 'y': 160.0} in bay bay1
+2025-03-04 16:35:42,886 - spatial.bay - INFO - Added Degasser bay1_Degasser_1 to bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - spatial.spatial_manager - INFO - Placed equipment bay1_Degasser_1 in bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - production_manager - INFO - Placing Caster 1 at position {'x': 197.0, 'y': 160.0} in bay bay1
+2025-03-04 16:35:42,886 - spatial.bay - INFO - Added Caster bay1_Caster_1 to bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - spatial.spatial_manager - INFO - Placed equipment bay1_Caster_1 in bay bay1 at {'x': 197.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - production_manager - INFO - Placing Caster 2 at position {'x': 204.0, 'y': 160.0} in bay bay1
+2025-03-04 16:35:42,886 - spatial.bay - INFO - Added Caster bay1_Caster_2 to bay bay1 at {'x': 204.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - spatial.spatial_manager - INFO - Placed equipment bay1_Caster_2 in bay bay1 at {'x': 204.0, 'y': 160.0}
+2025-03-04 16:35:42,886 - production_manager - INFO - Placing EAF 1 at position {'x': 242.0, 'y': 170.5} in bay bay2
+2025-03-04 16:35:42,886 - spatial.bay - INFO - Added EAF bay2_EAF_1 to bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,886 - spatial.spatial_manager - INFO - Placed equipment bay2_EAF_1 in bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,886 - production_manager - INFO - Placing LMF 1 at position {'x': 242.0, 'y': 170.5} in bay bay2
+2025-03-04 16:35:42,902 - spatial.bay - INFO - Added LMF bay2_LMF_1 to bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,902 - spatial.spatial_manager - INFO - Placed equipment bay2_LMF_1 in bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,902 - production_manager - INFO - Placing LMF 2 at position {'x': 250.0, 'y': 170.5} in bay bay2
+2025-03-04 16:35:42,902 - spatial.bay - INFO - Added LMF bay2_LMF_2 to bay bay2 at {'x': 250.0, 'y': 170.5}
+2025-03-04 16:35:42,902 - spatial.spatial_manager - INFO - Placed equipment bay2_LMF_2 in bay bay2 at {'x': 250.0, 'y': 170.5}
+2025-03-04 16:35:42,902 - production_manager - INFO - Placing Degasser 1 at position {'x': 242.0, 'y': 170.5} in bay bay2
+2025-03-04 16:35:42,902 - spatial.bay - INFO - Added Degasser bay2_Degasser_1 to bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,902 - spatial.spatial_manager - INFO - Placed equipment bay2_Degasser_1 in bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,912 - production_manager - INFO - Placing Caster 1 at position {'x': 242.0, 'y': 170.5} in bay bay2
+2025-03-04 16:35:42,913 - spatial.bay - INFO - Added Caster bay2_Caster_1 to bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,913 - spatial.spatial_manager - INFO - Placed equipment bay2_Caster_1 in bay bay2 at {'x': 242.0, 'y': 170.5}
+2025-03-04 16:35:42,913 - production_manager - INFO - Placing Caster 2 at position {'x': 250.0, 'y': 170.5} in bay bay2
+2025-03-04 16:35:42,913 - spatial.bay - INFO - Added Caster bay2_Caster_2 to bay bay2 at {'x': 250.0, 'y': 170.5}
+2025-03-04 16:35:42,913 - spatial.spatial_manager - INFO - Placed equipment bay2_Caster_2 in bay bay2 at {'x': 250.0, 'y': 170.5}
+2025-03-04 16:35:42,917 - production_manager - INFO - ProductionManager setup complete
+2025-03-04 16:35:42,917 - production_manager - INFO - ProductionManager initialized
+2025-03-04 16:35:42,924 - bottleneck_analyzer - INFO - Bottleneck analyzer initialized with window size: 20
+2025-03-04 16:35:42,931 - __main__ - INFO - Loading bitmap background from C:/Users/geev01/Desktop/30071551_14-02-2025.BMP
+2025-03-04 16:35:42,939 - __main__ - INFO - Successfully loaded bitmap image with dimensions 1318x1216
+2025-03-04 16:35:42,939 - __main__ - INFO - Loaded bitmap background from 30071551_14-02-2025.BMP
+2025-03-04 16:35:42,939 - __main__ - INFO - Initializing animation in main thread
+2025-03-04 16:35:43,048 - __main__ - INFO - Set up embedded animation with Matplotlib canvas
+2025-03-04 16:35:43,070 - dashboard - INFO - CAD layer management panel initialized
+2025-03-04 16:35:43,070 - bottleneck_analyzer - INFO - Bottleneck analyzer initialized with window size: 20
+2025-03-04 16:35:43,159 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:43,377 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:43,553 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:43,763 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:44,023 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:44,184 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:44,184 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:44,283 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:44,458 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:44,673 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:44,923 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:45,083 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:45,083 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:45,123 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:45,333 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:45,504 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:45,734 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:45,904 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:46,079 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:46,083 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:46,102 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:46,305 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:46,490 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:46,697 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:46,869 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:47,108 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:47,108 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:47,188 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:47,375 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:47,553 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:47,742 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:48,004 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:48,145 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:48,145 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:48,160 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:48,160 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:48,210 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:48,405 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:48,661 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:48,850 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:49,076 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:49,223 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:49,223 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:49,260 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:49,504 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:49,723 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:49,937 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:50,092 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:50,100 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:50,120 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:50,312 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:50,505 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:50,693 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:50,872 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:51,089 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:51,089 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:51,161 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:51,345 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:51,601 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:51,772 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:51,967 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:52,121 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:52,121 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:52,157 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:52,340 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:52,587 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:52,771 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:52,971 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:53,150 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:53,157 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:53,160 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:53,160 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:53,240 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:53,415 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:53,597 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:53,793 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:53,990 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:54,180 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:54,180 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:54,254 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:54,431 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:54,689 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:54,881 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:55,109 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:55,110 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:55,190 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:55,438 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:55,689 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:55,943 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:56,107 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:56,107 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:56,193 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:56,439 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:56,623 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:56,805 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:57,005 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:57,150 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:57,150 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:57,168 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:57,356 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:57,567 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:57,818 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:58,069 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:58,262 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:58,264 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:58,269 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:58,271 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:58,324 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:58,530 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:58,788 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:59,042 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:59,212 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:59,212 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:35:59,330 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:59,619 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:35:59,796 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:00,041 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:00,188 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:00,188 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:00,228 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:00,427 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:00,735 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:00,988 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:01,159 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:01,159 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:01,243 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:01,492 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:01,756 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:02,026 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:02,221 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:02,222 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:02,255 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:02,446 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:02,689 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:02,955 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:03,122 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:03,122 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:03,140 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:03,140 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:03,205 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:03,456 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:03,706 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:03,889 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:04,092 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:04,092 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:04,139 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:04,389 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:04,647 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:04,887 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:05,116 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:05,121 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:05,156 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:05,405 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:05,662 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:05,920 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:06,102 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:06,102 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:06,193 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:06,440 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:06,627 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:06,900 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:07,101 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:07,101 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:07,169 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:07,363 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:07,622 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:07,880 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:08,083 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:08,256 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:08,256 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:08,272 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:08,272 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:08,320 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:08,571 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:08,904 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:09,111 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:09,283 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:09,284 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:09,397 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:09,617 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:09,801 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:10,018 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:10,168 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:10,168 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:10,220 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:10,455 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:10,670 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:10,868 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:11,073 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:11,256 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:11,256 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:11,338 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:11,610 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:11,790 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:11,975 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:12,168 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:12,189 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:12,239 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:12,439 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:12,691 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:12,939 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:13,084 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:13,084 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:13,124 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:13,126 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:13,146 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:13,381 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:13,566 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:13,758 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:14,005 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:14,168 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:14,168 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:14,209 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:14,394 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:14,600 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:14,851 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:15,033 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:15,180 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:15,180 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:15,239 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:15,409 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:15,588 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:15,791 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:16,052 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:16,221 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:16,221 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:16,304 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:16,476 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:16,676 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:16,986 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:17,139 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:17,139 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:17,240 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:17,475 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:17,869 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:18,372 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:18,376 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:18,379 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:18,387 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:18,475 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:19,036 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:19,512 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:19,512 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:19,604 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:20,151 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:20,151 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:20,190 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:20,695 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:21,175 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:21,183 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:21,255 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:21,808 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:22,306 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:22,314 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:22,397 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:22,903 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:23,373 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:23,373 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:23,389 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:23,389 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:23,472 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:24,032 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:24,509 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:24,509 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:24,611 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:25,107 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:25,577 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:25,577 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:25,663 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:26,167 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:26,742 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:26,742 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:26,791 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:27,277 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:27,279 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:27,355 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:27,887 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:28,360 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:28,360 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:28,370 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:28,373 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:28,447 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:28,966 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:29,446 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:29,446 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:29,548 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:30,066 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:30,541 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:30,541 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:30,613 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:31,198 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:31,696 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:31,712 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:31,785 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:32,273 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:32,275 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:32,337 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:32,898 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:33,387 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:33,387 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:33,398 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:33,406 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:33,471 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:33,980 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:34,501 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:34,505 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:34,574 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:35,191 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:35,696 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:35,696 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:35,772 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:36,253 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:36,261 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:36,328 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:36,890 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:37,470 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:37,470 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:37,522 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:38,041 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:38,547 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:38,547 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:38,556 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:38,562 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:38,623 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:39,203 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:39,689 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:39,689 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:39,756 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:40,255 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:40,261 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:40,315 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:40,881 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:41,372 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:41,374 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:41,439 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:41,961 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:42,432 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:42,441 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:42,523 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:43,057 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:43,517 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:43,517 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:43,517 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:43,517 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:43,558 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:43,758 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:43,939 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:44,131 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:44,298 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:44,298 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:44,319 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:44,510 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:44,764 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:45,021 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:45,244 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:45,244 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:45,325 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:45,495 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:45,695 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:45,896 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:46,064 - __main__ - INFO - Refreshing simulation layout...
+2025-03-04 16:36:46,064 - __main__ - INFO - Loading bitmap background from C:/Users/geev01/Desktop/30071551_14-02-2025.BMP
+2025-03-04 16:36:46,080 - __main__ - INFO - Successfully loaded bitmap image with dimensions 1318x1216
+2025-03-04 16:36:46,096 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:46,253 - __main__ - INFO - Loaded bitmap background from 30071551_14-02-2025.BMP
+2025-03-04 16:36:46,297 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:46,464 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:46,466 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:46,515 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:46,701 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:46,884 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:47,079 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:47,241 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:47,249 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:47,281 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:47,463 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:47,636 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:47,863 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:48,046 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:48,195 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:48,195 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:48,211 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:48,211 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:48,264 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:48,481 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:48,719 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:48,928 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:49,190 - __main__ - INFO - Displaying background image in animation
+2025-03-04 16:36:49,336 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:49,336 - bottleneck_analyzer - INFO - No bottlenecks identified in the current system state
+2025-03-04 16:36:49,431 - __main__ - INFO - Displaying background image in animation

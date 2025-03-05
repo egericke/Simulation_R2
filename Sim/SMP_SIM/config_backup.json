@@ -1,0 +1,363 @@
+{
+  "simulation_time": 1440,
+  "heat_generation_interval": 60,
+  "max_heats": 50,
+  "n_bays": 2,
+  "n_eaf_per_bay": 1,
+  "n_lmf_per_bay": 2,
+  "n_degassers_per_bay": 1,
+  "n_casters_per_bay": 1,
+  "n_ladles": 12,
+  "n_ladle_cars": 3,
+  "bays": {
+    "bay1": {
+      "x": 192.0,
+      "y": 80.0,
+      "width": 38.0,
+      "height": 140.0
+    },
+    "bay2": {
+      "x": 231.0,
+      "y": 39.0,
+      "width": 42.0,
+      "height": 237.0
+    }
+  },
+  "units": {
+    "EAF": {
+      "capacity": 2,
+      "process_time": 50
+    },
+    "LMF": {
+      "capacity": 3,
+      "process_time": 30
+    },
+    "Degasser": {
+      "capacity": 2,
+      "process_time": 40
+    },
+    "Caster": {
+      "capacity": 2,
+      "process_time": 20
+    }
+  },
+  "grade_distribution": {
+    "standard": 60,
+    "high_clean": 20,
+    "decarb": 15,
+    "temp_sensitive": 5
+  },
+  "grade_properties": {
+    "standard": {
+      "requires_degasser": false,
+      "eaf_time": 50,
+      "lmf_time": 30,
+      "caster_time": 20,
+      "min_eaf_time": 50,
+      "min_lmf_time": 30,
+      "min_temperature": 1500,
+      "width_min": 900,
+      "width_max": 1900,
+      "requires_eaf": true,
+      "requires_lmf": true,
+      "requires_caster": true,
+      "degasser_time": 40,
+      "min_degasser_time": 40,
+      "max_temperature": 1650,
+      "temperature_loss_rate": 1.5,
+      "min_sequence_length": 1,
+      "max_sequence_length": 7
+    },
+    "high_clean": {
+      "requires_degasser": true,
+      "eaf_time": 68,
+      "lmf_time": 45,
+      "degasser_time": 45,
+      "caster_time": 25,
+      "min_eaf_time": 60,
+      "min_lmf_time": 40,
+      "min_degasser_time": 35,
+      "min_temperature": 1520,
+      "width_min": 1000,
+      "width_max": 1800,
+      "requires_eaf": true,
+      "requires_lmf": true,
+      "requires_caster": true,
+      "max_temperature": 1650,
+      "temperature_loss_rate": 1.2,
+      "min_sequence_length": 1,
+      "max_sequence_length": 7
+    },
+    "decarb": {
+      "requires_degasser": true,
+      "eaf_time": 62,
+      "lmf_time": 40,
+      "degasser_time": 50,
+      "caster_time": 22,
+      "min_eaf_time": 55,
+      "min_lmf_time": 35,
+      "min_degasser_time": 40,
+      "min_temperature": 1510,
+      "width_min": 900,
+      "width_max": 1700,
+      "requires_eaf": true,
+      "requires_lmf": true,
+      "requires_caster": true,
+      "max_temperature": 1650,
+      "temperature_loss_rate": 1.5,
+      "min_sequence_length": 1,
+      "max_sequence_length": 7
+    },
+    "temp_sensitive": {
+      "requires_degasser": false,
+      "eaf_time": 55,
+      "lmf_time": 35,
+      "caster_time": 30,
+      "min_eaf_time": 50,
+      "min_lmf_time": 30,
+      "min_temperature": 1520,
+      "temperature_loss_rate": 2.0,
+      "width_min": 1100,
+      "width_max": 1600,
+      "requires_eaf": true,
+      "requires_lmf": true,
+      "requires_caster": true,
+      "degasser_time": 40,
+      "min_degasser_time": 40,
+      "max_temperature": 1580,
+      "min_sequence_length": 1,
+      "max_sequence_length": 7
+    }
+  },
+  "grade_routes": {
+    "standard": [
+      "EAF",
+      "LMF",
+      "Caster"
+    ],
+    "high_clean": [
+      "EAF",
+      "LMF",
+      "Degasser",
+      "Caster"
+    ],
+    "decarb": [
+      "EAF",
+      "LMF",
+      "Degasser",
+      "Caster"
+    ],
+    "temp_sensitive": [
+      "EAF",
+      "LMF",
+      "Caster"
+    ]
+  },
+  "ladle_warming_time": 15,
+  "ladle_max_heats": 5,
+  "ladle_car_speed": 150,
+  "crane_speed": 100,
+  "loading_time": 5,
+  "unloading_time": 5,
+  "bay_connections": [
+    {
+      "from": "bay1",
+      "to": "bay2",
+      "distance": 300,
+      "travel_time": 2
+    },
+    {
+      "from": "bay2",
+      "to": "bay1",
+      "distance": 300,
+      "travel_time": 2
+    }
+  ],
+  "metrics_reporting_interval": 60,
+  "visualization": {
+    "bay_color": "#e6f7ff",
+    "eaf_color": "#ff7f0e",
+    "lmf_color": "#1f77b4",
+    "degasser_color": "#2ca02c",
+    "caster_color": "#d62728",
+    "ladle_car_color": "#9467bd",
+    "crane_color": "#8c564b",
+    "scale_factor": 0.5
+  },
+  "background_image": null,
+  "sim_speed": 1.0,
+  "takt_time": 60,
+  "lean_metrics": {
+    "target_utilization": 0.8
+  },
+  "scenarios": {
+    "default": {
+      "routing": "standard"
+    },
+    "maintenance": {
+      "routing": "maintenance_mode"
+    }
+  },
+  "logging": {
+    "level": "INFO"
+  },
+  "dashboard": {
+    "update_interval": 1000
+  },
+  "analytics": {
+    "update_interval": 5000,
+    "window_size": 20,
+    "high_utilization": 0.85,
+    "queue_alert": 2,
+    "wait_time_alert": 20
+  },
+  "heat_interval": 10,
+  "production_manager_interval": 5,
+  "grid_size": 100,
+  "grid_width": 1000,
+  "grid_height": 1000,
+  "cad_file_path": "C:/Users/geev01/Desktop/layout.pdf",
+  "cad_scale": 1.0,
+  "cad_x_offset": 0,
+  "cad_y_offset": 0,
+  "auto_scale_cad": true,
+  "pdf_real_width": 100.0,
+  "pdf_real_height": 60.0,
+  "production_hours_per_year": 7000,
+  "equipment_positions": {
+    "EAF_0_bay1": {
+      "bay": "bay1",
+      "type": "EAF",
+      "id": 0,
+      "x": 202.0,
+      "y": 90.0
+    },
+    "EAF_1_bay1": {
+      "bay": "bay1",
+      "type": "EAF",
+      "id": 1,
+      "x": 252.0,
+      "y": 90.0
+    },
+    "LMF_0_bay1": {
+      "bay": "bay1",
+      "type": "LMF",
+      "id": 0,
+      "x": 302.0,
+      "y": 90.0
+    },
+    "LMF_1_bay1": {
+      "bay": "bay1",
+      "type": "LMF",
+      "id": 1,
+      "x": 202.0,
+      "y": 140.0
+    },
+    "LMF_2_bay1": {
+      "bay": "bay1",
+      "type": "LMF",
+      "id": 2,
+      "x": 252.0,
+      "y": 140.0
+    },
+    "Degasser_0_bay1": {
+      "bay": "bay1",
+      "type": "Degasser",
+      "id": 0,
+      "x": 302.0,
+      "y": 140.0
+    },
+    "Degasser_1_bay1": {
+      "bay": "bay1",
+      "type": "Degasser",
+      "id": 1,
+      "x": 202.0,
+      "y": 190.0
+    },
+    "Caster_0_bay1": {
+      "bay": "bay1",
+      "type": "Caster",
+      "id": 0,
+      "x": 252.0,
+      "y": 190.0
+    },
+    "Caster_1_bay1": {
+      "bay": "bay1",
+      "type": "Caster",
+      "id": 1,
+      "x": 302.0,
+      "y": 190.0
+    },
+    "EAF_0_bay2": {
+      "bay": "bay2",
+      "type": "EAF",
+      "id": 0,
+      "x": 241.0,
+      "y": 199.0
+    },
+    "EAF_1_bay2": {
+      "bay": "bay2",
+      "type": "EAF",
+      "id": 1,
+      "x": 291.0,
+      "y": 199.0
+    },
+    "LMF_0_bay2": {
+      "bay": "bay2",
+      "type": "LMF",
+      "id": 0,
+      "x": 341.0,
+      "y": 199.0
+    },
+    "LMF_1_bay2": {
+      "bay": "bay2",
+      "type": "LMF",
+      "id": 1,
+      "x": 241.0,
+      "y": 249.0
+    },
+    "LMF_2_bay2": {
+      "bay": "bay2",
+      "type": "LMF",
+      "id": 2,
+      "x": 291.0,
+      "y": 249.0
+    },
+    "Degasser_0_bay2": {
+      "bay": "bay2",
+      "type": "Degasser",
+      "id": 0,
+      "x": 341.0,
+      "y": 249.0
+    },
+    "Degasser_1_bay2": {
+      "bay": "bay2",
+      "type": "Degasser",
+      "id": 1,
+      "x": 241.0,
+      "y": 299.0
+    },
+    "Caster_0_bay2": {
+      "bay": "bay2",
+      "type": "Caster",
+      "id": 0,
+      "x": 291.0,
+      "y": 299.0
+    },
+    "Caster_1_bay2": {
+      "bay": "bay2",
+      "type": "Caster",
+      "id": 1,
+      "x": 341.0,
+      "y": 299.0
+    }
+  },
+  "n_cranes_per_bay": 2,
+  "_animation_settings": {
+    "width": 1200,
+    "height": 800,
+    "title": "Steel Plant Simulation",
+    "speed": 1.0,
+    "show_fps": true
+  }
+}
