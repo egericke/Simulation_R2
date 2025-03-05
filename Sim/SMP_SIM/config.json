@@ -275,3 +275,25 @@
     },
     "show_grid_overlay": true
 }
+{
+  "ladle_car_paths": [
+    {
+      "id": "path1",
+      "points": [
+        {"x": 100, "y": 200},
+        {"x": 150, "y": 250},
+        {"x": 200, "y": 300}
+      ],
+      "associated_bays": ["bay1", "bay2"]
+    },
+    {
+      "id": "path2",
+      "points": [
+        {"x": 200, "y": 300},
+        {"x": 250, "y": 350},
+        {"x": 300, "y": 400}
+      ],
+      "associated_bays": ["bay2", "bay3"]
+    }
+  ]
+}
